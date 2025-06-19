@@ -1,0 +1,84 @@
+/* nav.css */
+
+.navbar {
+  background-color: #121212;
+  box-shadow: 0 0 10px #39ff14cc;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+.navbar-brand {
+  color: #39ff14;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #39ff14;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ff2d95;
+  text-shadow: 0 0 10px #ff2d95;
+}
+
+.navbar-toggler {
+  border: none;
+  filter: drop-shadow(0 0 4px #39ff14);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-link {
+  color: #39ff14;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  text-shadow: 0 0 4px #39ff14;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ff2d95;
+  text-shadow: 0 0 8px #ff2d95;
+  background-color: rgba(255, 45, 149, 0.1);
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-item.active > .nav-link,
+.navbar-nav .nav-link.active {
+  color: #ff2d95;
+  text-shadow: 0 0 10px #ff2d95;
+  font-weight: 900;
+}
+
+.dropdown-menu {
+  background-color: #1e1e2f;
+  border: none;
+  box-shadow: 0 0 12px #39ff14cc;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.dropdown-item {
+  color: #39ff14;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #ff2d95;
+  color: #121212;
+  text-shadow: none;
+}
+
+.collapse.show {
+  background-color: #121212;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 12px #39ff14cc;
+}

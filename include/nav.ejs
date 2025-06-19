@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="/">NaLang Learn Site</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="네비게이션 토글">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/trans">번역</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/munbub">문법학습</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">단어학습</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bada">받아쓰기</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                글자학습
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/jaeumLearn">자음학습</a></li>
+                <li><a class="dropdown-item" href="/moeumLearn">모음학습</a></li>
+            </ul>
+        </li>
+        <% if (!session || !session.nickname) { %>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">로그인</a>
+        </li>
+        <% } else {%>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">로그아웃</a>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>

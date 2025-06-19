@@ -1,0 +1,111 @@
+/* join.css 수정본 */
+
+body {
+  background: linear-gradient(135deg, #121212 0%, #1e1e2f 100%);
+  color: #eee;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.join-wrapper {
+  display: flex;
+  justify-content: center;
+  /* align-items: center;  로그인처럼 세로 중앙정렬 안함 */
+  min-height: calc(100vh - 56px); /* nav 높이 뺌 */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.join-box {
+  background-color: #1e1e2f;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #39ff14cc;
+  width: 100%;
+  max-width: 400px; /* 로그인과 동일하게 */
+  max-height: 800px; /* 로그인과 동일하게 */
+  text-align: center;
+}
+
+/* 이하 로그인과 동일한 스타일 유지 */
+h2 {
+  color: #39ff14;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #39ff14;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #39ff14;
+  text-shadow: 0 0 8px #39ff14;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 2px solid #39ff14;
+  border-radius: 6px;
+  background-color: #121212;
+  color: #eee;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #ff2d95;
+  box-shadow: 0 0 8px #ff2d95;
+}
+
+button[type="submit"],
+button[type="button"] {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #121212;
+  background-color: #39ff14;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #39ff14;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #ff2d95;
+  box-shadow: 0 0 20px #ff2d95;
+  color: #fff;
+}
+
+.id-check-wrapper {
+  display: flex;
+  align-items: center; /* 수직 중앙정렬 */
+  gap: 0.75rem; /* input과 버튼 사이 간격 */
+}
+
+.id-check-wrapper input {
+  flex: 1; /* input이 가능한 공간을 다 차지해서 버튼과 높이가 맞음 */
+  margin-bottom: 1.25rem; /* 기존 마진 유지 */
+}
+
+.id-check-wrapper button {
+  flex-shrink: 0; /* 버튼 크기 고정 */
+  font-size: 13px;
+  padding: 0.5rem 0.75rem;
+  height: 2.7rem; /* input 높이와 비슷하게 맞춤 */
+  margin-bottom: 1.25rem; /* input과 동일한 아래 마진 */
+}
