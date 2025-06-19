@@ -1,10 +1,10 @@
 import { createPool } from "mysql2/promise";
 
 const pool = createPool({
-    host: "localhost",
-    user: "user",
-    password: "1234",
-    port: 3306,
+    host: "switchyard.proxy.rlwy.net",
+    user: "root",
+    password: "tOxDfnxNEPMghrYtwJdjcUMuYXRPKqcw",
+    port: 31760,
     database: "nalang",
 });
 
